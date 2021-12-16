@@ -49,6 +49,7 @@ jobs:
             body: Auto-created Pull Request
             branch: ${{ github.ref }}
             base: main
+            labels: automerge
 
   
   automerge:
