@@ -49,7 +49,9 @@ jobs:
             body: Auto-created Pull Request
             branch: ${{ github.ref }}
             base: main
+  
   automerge:
+    needs: create_pull_request
     runs-on: ubuntu-latest
     steps:
       - name: automerge
